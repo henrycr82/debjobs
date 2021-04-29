@@ -1,0 +1,45 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebars y Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "desarrollo": "concurrently \"npm run dev\" \" npm run watch \"",
+    "start": "node ./index.js",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "Henry Castro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^5.3.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.10.0",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.5.0",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^4.0.2",
+    "sweetalert2": "^10.15.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
